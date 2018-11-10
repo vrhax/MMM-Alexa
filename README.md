@@ -1,4 +1,6 @@
 # MMM-Alexa
+**NB: This is a work in progress !!!**
+
 This is an example Alexa skills Flask_Ask program that interacts with the MagicMirror MMM-Memo module to add/remove items from memos. In order to use this, you need the following:
 
 Create an "Alexa" directory `/home/pi/Alexa` <= this is (obviously) where your MMalexa.py & ngrok files will go
