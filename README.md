@@ -20,6 +20,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
 unzip ngrok-stable-linux-arm.zip
 sudo chmod +x ngrok
 ./ngrok authtoken <ngrok token>
+sudo cp ./ngrok/ngrok.yml /opt/ngrok/ngrok.yml
+sudo cp ngrok /opt/ngrok/
 ```
 Your ngrok token can be found in your ngrok dashboard, under auth.
 
