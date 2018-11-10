@@ -31,7 +31,7 @@ Add the MMM-Memo module to your `/home/pi/MagicMirror/config/config.js` file
 
 Modify the `MMalexa.py` AND `MMalexaSkill.json` files accordingly. I added some very generic lists for testing.
 
-See https://pythonprogramming.net/testing-deploying-alexa-skill-flask-ask-python-tutorial/?completed=/headlines-function-alexa-skill-flask-ask-python-tutorial/ for creating an Alexa skill.
+See https://pythonprogramming.net/testing-deploying-alexa-skill-flask-ask-python-tutorial/?completed=/headlines-function-alexa-skill-flask-ask-python-tutorial/ for more info on how an Alexa skill is created, and how it interacts with your FLASK_ASK server.
 
 Cut/paste or upload the `MMalexaSkill.json`
 
