@@ -1,0 +1,404 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "dna",
+			"intents": [
+				{
+					"name": "NewsIntent",
+					"slots": [
+						{
+							"name": "news",
+							"type": "news_list"
+						}
+					],
+					"samples": [
+						"to get {news} news",
+						"to fetch {news} news",
+						"for {news} news",
+						"to get the {news} news",
+						"to fetch the {news} news",
+						"for the {news} news"
+					]
+				},
+				{
+					"name": "mmMemoIntent",
+					"slots": [
+						{
+							"name": "action",
+							"type": "action_list"
+						},
+						{
+							"name": "thing",
+							"type": "thing_list"
+						},
+						{
+							"name": "memo",
+							"type": "memo_list"
+						}
+					],
+					"samples": [
+						"to {action} {thing} to {memo}",
+						"to {action} {thing} from {memo}",
+						"to {action} {thing} to my {memo}",
+						"to {action} {thing} from my {memo}",
+						"to {action} {thing} to {memo} list",
+						"to {action} {thing} from {memo} list",
+						"to {action} {thing} to my {memo} list",
+						"to {action} {thing} from my {memo} list"
+					]
+				},
+				{
+					"name": "mmClearMemoIntent",
+					"slots": [
+						{
+							"name": "memo",
+							"type": "memo_list"
+						}
+					],
+					"samples": [
+						"to clear {memo}",
+						"to clear {memo} list",
+						"to clear my {memo}",
+						"to clear my {memo} list"
+					]
+				},
+				{
+					"name": "mmReminderIntent",
+					"slots": [
+						{
+							"name": "reminder",
+							"type": "reminder_list"
+						}
+					],
+					"samples": [
+						"to remind me to {reminder}"
+					]
+				},
+				{
+					"name": "NoIntent",
+					"slots": [],
+					"samples": [
+						"nope",
+						"never mind",
+						"no thanks",
+						"no"
+					]
+				},
+				{
+					"name": "AMAZON.FallbackIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.NavigateHomeIntent",
+					"samples": []
+				}
+			],
+			"types": [
+				{
+					"name": "news_list",
+					"values": [
+						{
+							"name": {
+								"value": "reddit"
+							}
+						}
+					]
+				},
+				{
+					"name": "action_list",
+					"values": [
+						{
+							"name": {
+								"value": "add"
+							}
+						},
+						{
+							"name": {
+								"value": "remove",
+								"synonyms": [
+									"delete"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "memo_list",
+					"values": [
+						{
+							"name": {
+								"value": "reminders",
+								"synonyms": [
+									"reminder"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "groceries",
+								"synonyms": [
+									"grocery",
+									"grocery list"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "reminder_list",
+					"values": [
+						{
+							"name": {
+								"value": "get oil change",
+								"synonyms": [
+									"oil change"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "take out trash",
+								"synonyms": [
+									"trash",
+									"take trash to dumpster",
+									"throw out the trash",
+									"throw out trash",
+									"take out the trash",
+									"take out the garbage",
+									"take out garbage"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "check mail",
+								"synonyms": [
+									"mail",
+									"check deliverires"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "go grocery shopping",
+								"synonyms": [
+									"get groceries"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "go shopping"
+							}
+						},
+						{
+							"name": {
+								"value": "get ciggies",
+								"synonyms": [
+									"ciggies",
+									"get smokes",
+									"get ciggarites"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "get gas",
+								"synonyms": [
+									"gas",
+									"petrol"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "goodwill",
+								"synonyms": [
+									"go to goodwill",
+									"swing by goodwill",
+									"stop by goodwill"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "savers",
+								"synonyms": [
+									"go to savers",
+									"swing by savers",
+									"stop by savers"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "walmart",
+								"synonyms": [
+									"go to walmart",
+									"swing by walmart",
+									"stop by walmart"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "walgreens",
+								"synonyms": [
+									"go to walgreens",
+									"swing by walgreens",
+									"stop by walgreens"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "lowes",
+								"synonyms": [
+									"go to lowes",
+									"swing by lowes",
+									"stop by lowes"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "big lots",
+								"synonyms": [
+									"go to big lots",
+									"swing by big lots",
+									"stop by big lots"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "smiths",
+								"synonyms": [
+									"go to smiths",
+									"swing by smiths",
+									"stop by smiths"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "go to costco",
+								"synonyms": [
+									"swing by costco",
+									"stop by costco"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "fleamarket",
+								"synonyms": [
+									"go to fleamarket",
+									"swing by fleamarket",
+									"stop by fleamarket"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "garage sale",
+								"synonyms": [
+									"go to garage sale",
+									"swing by garage sale",
+									"stop by garage sale"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "buffalo exchange",
+								"synonyms": [
+									"go to buffalo exchange",
+									"swing by buffalo exchange",
+									"stop by buffalo exchange"
+								]
+							}
+						},
+						{
+							"name": {
+								"value": "world market",
+								"synonyms": [
+									"go to world market",
+									"swing by world market",
+									"stop by world market"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "thing_list",
+					"values": [
+						{
+							"name": {
+								"value": "coffee"
+							}
+						},
+						{
+							"name": {
+								"value": "nesquick"
+							}
+						},
+						{
+							"name": {
+								"value": "chips"
+							}
+						},
+						{
+							"name": {
+								"value": "ice cream"
+							}
+						},
+						{
+							"name": {
+								"value": "chicken"
+							}
+						},
+						{
+							"name": {
+								"value": "bacon"
+							}
+						},
+						{
+							"name": {
+								"value": "milk"
+							}
+						},
+						{
+							"name": {
+								"value": "cheese"
+							}
+						},
+						{
+							"name": {
+								"value": "eggs"
+							}
+						},
+						{
+							"name": {
+								"value": "ALL"
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+}

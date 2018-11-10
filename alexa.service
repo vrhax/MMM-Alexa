@@ -1,0 +1,14 @@
+[Unit]
+Description=Alexa Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python -u MMalexa.py
+WorkingDirectory=/home/pi/Alexa
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
